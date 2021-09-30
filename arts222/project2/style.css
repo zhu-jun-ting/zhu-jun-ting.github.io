@@ -1,0 +1,122 @@
+body {
+	margin-left: 50px;
+	margin-top: 30px;
+	width: 960px;
+}
+
+div {
+	display: block;
+}
+
+.blockButton {
+	background: pink;
+	display: inline-block;
+	padding: 20px;
+}
+
+.blockButton:hover {
+	background: lightpink;
+	animation: addShadow ease 100s 1;
+}
+
+@keyframes addShadow{
+	1% {
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+	}
+}
+
+#mouseImgDiv {
+	display: none;
+}
+
+#toyImgDiv {
+	display: none;
+}
+
+.invincible {
+	display: none;
+}
+
+a {
+	color: seagreen;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: seagreen;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid #222222;
+}
+
+p:hover {
+	text-shadow: 2px 2px #888888;
+}
+
+h2 {
+	font-family: Helvetica;
+	font-size: 2em;
+}
+
+img {
+	border: 50px;
+	box-shadow: 5px 10px #222222;
+}
+
+h2 {
+	border-bottom: 1px solid black;
+}
+
+h2:hover {
+	color: purple;
+}
+
+html {
+	background-color: rgba(12, 200, 67, 0.15);
+}
+
+.trymove {
+	width: 100px;
+	height: 100px;
+	background: pink;
+	position: relative;
+	animation: leftToRight linear 2s infinite;
+	// animation: name duration way-to-move delay time //
+}
+
+@keyframes leftToRight {
+	0% {
+		transform: rotate(0deg);
+		top: 0px;
+	}
+
+	50% {
+		transform: rotate(180deg);
+		top: 250px;
+	}
+
+	100% {
+		transform: rotate(360deg);
+		top: 0px;
+	}
+}

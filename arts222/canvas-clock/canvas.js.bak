@@ -1,0 +1,10 @@
+<script type="text/javascript">
+		window.onload=function(){
+			document.getElementById('canvas');
+			var ctx=canvas.getContext('2d');
+
+			ctx.drawArc()
+		}
+		
+	</script>
+</head>

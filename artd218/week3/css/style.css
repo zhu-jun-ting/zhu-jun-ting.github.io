@@ -1,0 +1,81 @@
+body {
+	background-color: rgb(348, 235, 264);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0 0 200px 0;
+	font-size: 0.6em;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.badge :hover {
+	color: rgb(215, 163, 164);
+	font-weight: bold;
+}
+
+.active {
+	background-color: rgb(215, 33, 39);
+	font-weight: bold;
+}
+
+.badge {
+	color: rgb(220, 230, 240);
+	font-size: 1em;
+	font-weight: normal;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	background-color: rgb(3, 95, 164);
+	position: sticky;
+	top: 0px;
+}
+
+.menu {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.badge :hover {
+	background-color: rgb(215, 33, 39);
+}
+
+.header {
+	width: 100%;
+}
+
+.main {
+	margin-left: 5%;
+	margin-right: 20%;
+}
+
+.image {
+	float: left;
+	width: 20%;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.title {
+	font-size: 2em;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	background-color: rgb(3, 95, 164);
+}
+
+.footer-text {
+	padding: 10px;
+	color: rgb(220, 230, 240);
+}
+
+.inlineLink {
+	color: rgb(122, 150, 240);
+}

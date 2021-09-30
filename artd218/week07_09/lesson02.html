@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Javascript Lessons</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+	<body>
+		
+		<div class="wrapper">
+			
+			<div class="interior_header">
+				<div class="interior_title">
+					Javascript Lessons
+				</div>
+				<div class="interior_menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="lesson01.html">Lesson 01</a></li>
+						<li class="active"><a href="lesson02.html">Leeson 02</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="interior_content">
+				
+				<!-- 01 -->
+				<strong class="content_header">
+					01. Statements
+				</strong>
+				<p>
+					javascript program is a list of statements to be executed by a computer
+				</p>
+				<ol>
+					<li>declare 3 variables</li>
+					<li>assign the value 5 to x</li>
+					<li>assign the value 6 to y</li>
+					<li>assign the sum of x + y</li>
+					<li>document the statement by finding the div id demo_01 and write the statement inside the HTML file</li>
+					<li>finally, you document where the answer should show up, we are using demo_numbers for each example</li>
+				</ol>
+				
+				<p id='demo_01'></p>
+				
+				<script type="text/javascript">
+					var x, y, z
+					x = 5
+					y = 6
+					z = x + y
+					document.getElementById('demo_01').innerHTML = 'the value of z is' + z + '.'
+				</script>
+				
+				<!-- 02 --><br><hr >
+				<strong class="content_header">
+					02. Strings
+				</strong>
+				<p>
+					Strings are written with double or single quotes. you have used both in previous lessons]
+				</p>
+				
+				<p id="demo_02"></p>
+				
+				<script type="text/javascript">
+					document.getElementById("demo_02").innerHTML = 'John Doe'
+				</script>
+				
+				<!-- 03 --><br><hr >
+				<strong class="content_header">
+					03. Varibles 
+				</strong>
+				
+				<p>in this example, we declare the Varibles as words:</p>
+				
+				<ol>
+					<li>declare the variable price1 and price 2</li>
+					<li>assign the value of 5 to price1</li>
+					<li>assign the value of 6 to price2</li>
+					<li>assign the value of price1 + price2 to toal</li>
+					<li>finally you document where the answer should show up, we are using demo_numbers for each each example</li>
+					
+				</ol>
+				
+				<p id='demo_03'></p>
+				
+				<script type="text/javascript">
+					price1 = 5
+					price2 = 6
+					total = price1 + price2
+					document.getElementById('demo_03').innerHTML = 'the total is: ' + total
+				</script>
+				
+				<p>
+					
+				</p>
+				
+				<!-- 04 --><br><hr >
+				<strong class="content_header">
+					04. Operators
+				</strong>
+				<p>
+					the assignment (=) operator assigns a value to a variable. Other operators include signs such as equal, plus, subtraction, multiplication, division, percentage and combination of these signs
+				</p>
+				<ol>
+					<li>assign the value of 5 to x</li>
+					<li>assign the value of 2 to y</li>
+					<li>assign the value of 7 to z</li>
+					<li>finally you document where the answer should show up, we are using demo_numbers for each examples</li>
+				</ol>
+				<p id="demo_04"></p>
+				<p>
+					
+				</p>
+				
+				<script type="text/javascript">
+					x = 5
+					y = 2
+					z = x + y
+					document.getElementById('demo_04')
+				</script>
+				
+				<!-- 05 --><br><hr >
+				<strong class="content_header">
+					05. Data Types
+				</strong>
+				<p>
+					javascript evaluates expressions from left to right. different sequences can produce different results
+				</p>
+				
+				<p id="demo_05a"></p>
+				
+				<p id="demo_05b"></p>
+				
+				<script type="text/javascript">
+					x = 16 + 'volvo'
+					document.getElementById('demo_05a').innerHTML = x
+					y = 'volvo' + 16
+					document.getElementById('demo_05b').innerHTML = y
+				</script>
+				
+				
+				<!-- 05 --><br><hr >
+				<strong class="content_header">
+					06. Booleans
+				</strong>
+				<p>
+					booleans can have two values: true or false
+				</p>
+				
+				<ol>
+					<li>assign the value of 5 to x</li>
+					<li>assign the value of 5 to y</li>
+					<li>assign the value of 6 to z</li>
+					<li>finally you document where the answer should show up, we are using demo_numbers for each example. in this example we add, does x (equal) y, and does x (equal) z</li>
+				</ol>
+				
+				<p id="demo_06"></p>
+				
+				<script type="text/javascript">
+					x = 5
+					y = 5
+					z = 6
+					document.getElementById('demo_06').innerHTML = (x == y) + '<br>' + (x == z)
+				</script>
+				
+			</div>
+
+			<footer>
+				<p>ARTD 218 Interaction Design Foundation / <a href="../index.html">Course Library</a></p>
+			</footer>
+			
+		</div>
+		
+	</body>
+</html>

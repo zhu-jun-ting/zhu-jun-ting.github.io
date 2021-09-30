@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Javascript Lessons</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+	<body>
+		
+		<div class="wrapper">
+			
+			<header>
+				<div class="title">
+					Javascript Lessons
+				</div>
+				<menu>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="lesson01.html">Lesson 01</a></li>
+						<li><a href="lesson02.html">Leeson 02</a></li>
+					</ul>
+				</menu>
+			</header>
+			
+			<div class="content">
+				<div class="content_one">
+					<strong>Lesson 01</strong><br>
+					<a href="index.html">
+						<img src="img/icon01.png" >
+					</a><br>
+					<a href="index.html">
+						View Work
+					</a>
+				</div>
+				<div class="content_two">
+					<strong>Lesson 02</strong><br>
+					<a href="lesson02.html">
+						<img src="img/icon02.png" >
+					</a><br>
+					<a href="lesson02.html">
+						View Work
+					</a>
+				</div>
+				<div class="content_three">
+					<strong>Course Library</strong><br>
+					<a href="../index.html">
+						<img src="img/icon03.png" >
+					</a><br>
+					<a href="../index.html">
+						View Work
+					</a>
+				</div>
+			</div>
+			
+			<div class="slideshow">
+				<button class="left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="right" onclick="plusDivs(1)">&#10095;</button>
+				<img class="mySlides" type="image" src="img/slideshow01.png">
+				<img class="mySlides" type="image" src="img/slideshow02.png">
+				<img class="mySlides" type="image" src="img/slideshow03.png">
+			</div>
+			
+			<div class="bio">
+				<p>I consider myself to be a passionate community servant with the bility to motivate and inspire individuals in identifying their potential to continue and share this passion to serve others. With this ongoing quest to give, I have been able to promote significant, positive change in communities and individuals through advocacy, empowered by compassion. I take pride in engaging in a civically based approached to design. As a South Bronx native and son of a Dominican born single mother, I have grown to be familiar with a striving through strife mindset based on a strong foundation built on educational values. These brief but significant attributes have naturally inspired me to become a voice to the voiceless and a beacon of hope to the hopeless.</p>
+			</div>
+			
+			<div class="parallax">
+				
+			</div>
+			
+			<footer>
+				<p>ARTD 218 Interaction Design Foundation / <a href="../index.html">Course Library</a></p>
+			</footer>
+			
+		</div>
+		
+		<script type="text/javascript">
+			
+			slideIndex = 1
+			
+			showDivs(slideIndex)
+			
+			function plusDivs(n) {
+				showDivs(slideIndex += n)
+			}
+			
+			function showDivs(n) {
+				var i
+				var x = document.getElementsByClassName('mySlides')
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = 'none'
+				}
+				x[slideIndex - 1].style.display = 'block'
+			}
+			
+		</script>
+		
+	</body>
+</html>

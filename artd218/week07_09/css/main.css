@@ -1,0 +1,345 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* 
+
+The orange color you will need is #e94b26 and the purple color you will need is #8805f8.
+
+You will not need all of the classes for the homepage, but there is only one css file for weeks 07-09.
+
+You will need to get the @import link for the font Open Sans on Google Fonts 
+
+*/
+
+
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* You will need to include a repeat of 6 coloumns. */
+.wrapper {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(6, [col]1fr);
+	grid-template-rows: auto;
+}
+
+/* In the header you will need to setup a new grid for title and menu. */
+header { 
+	grid-column: 1/7;
+	grid-row: 1;
+	padding: 0;
+	margin: 0;
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    max-height: 600px;
+    min-height: 400px;
+    z-index: 0;
+    
+    /* The title and menu will need a grid with six columns to stay on the top of the header. If this is not setup then it will not align to the top of the header */
+	display: grid;
+	grid-template-columns: repeat(6, [col]1fr);
+	grid-template-rows: auto;
+    
+}
+.title {
+	grid-column: 1/4;
+	grid-row: 1;
+    font-size: 28pt;
+    font-weight: 600;
+    color: #8805F8;
+    margin: 25px 0 0 35px;
+}
+
+/* this puts the menu in its place */
+menu {
+	grid-row: 1;
+	grid-column: 4/7;
+	margin: 25px 35px 0 0;
+    padding: 0;
+}
+
+/* this styles the menu */ 
+menu ul {
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+menu li {
+	text-align: center;
+	margin: 0;
+    padding: 20px;
+    font-weight: 600;
+}
+menu li a {
+	color: #8805F8;
+	text-align: center;
+	padding: 0;
+	font-size: 14pt;
+	text-transform: uppercase;
+    text-decoration: none;
+}
+menu li:hover {
+    background-color: aqua;
+    border-radius: 50px;
+}
+/* menu .active {
+    font-weight: ;
+    color: ;
+} */
+
+/* purpe div content */
+.content {
+	grid-row: 2;
+	grid-column: 1/7;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 125px 50px;
+    margin-top: 0;
+    background-color: #8805F8;
+}
+.content_one {
+    grid-row: 1;
+	grid-column: 1;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    width: 80%;
+    border-radius: 100px;
+    padding: 20px;
+}
+.content_two {
+	grid-row: 1;
+	grid-column: 2;
+	text-align: center;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	height: 80%;
+	width: 80%;
+	border-radius: 100px;
+	padding: 20px;
+}
+.content_three {
+	grid-row: 1;
+	grid-column: 3;
+	text-align: center;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	height: 80%;
+	width: 80%;
+	border-radius: 100px;
+	padding: 20px;
+}
+
+/* This class will setup the image for all three content areas, it is specific to the width of the icon images not the placement of that images */
+.content_one, .content_two,.content_three, img{
+    width: 60%;
+}
+
+/* This will allow you to change the color of the link in the content areas specifically. */
+.content_one, .content_two,.content_three, a {
+    font-size: 8pt;
+    text-transform: uppercase;
+    padding-top: 20px;
+	color: #E94B26;
+}
+
+/* slideshow */
+.slideshow {
+	grid-column: 1/7;
+    grid-row: 3;
+    margin: 0;
+	padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	z-index: 0;
+}
+
+/* Next week you will setup a slideshow and we will start using JavaScript, which uses capital letters */
+.mySlides {
+	grid-column: 1/4;
+    grid-row: 1;
+    width: 100%;
+    min-width: 100%;
+	z-index: 0;
+}
+
+/* In week 8 you will setup these buttons. */
+.left {
+    grid-column: 1;
+	grid-row: 1;
+    z-index: 10;
+	color: #ffffff;
+    background-color: #8805f8;
+	height: 80px;
+    width: 50px;
+    border: 0;
+	margin-top: 80%;
+    margin-left: 10%;
+	border-radius: 80px;
+    opacity: 50%;
+}
+.right {
+	grid-row: 1;
+	grid-column: 3;
+	z-index: 10;
+	color: #ffffff;
+    background-color: #8805f8;
+	height: 80px;
+    width: 50px;
+    border: 0;
+	margin-top: 80%;
+    margin-left: 70%;
+	border-radius: 80px;
+    opacity: 50%;
+}
+.right:hover, .left:hover {
+	background-color: #cccccc;
+}
+
+/* bio and parallax rows */
+.bio {
+    grid-column: 1/7;
+	grid-row: 4;
+    padding: 150px;
+    background-color: #8805f8;
+    color: white;
+    text-align: justify;
+}
+
+/* this is the image that is fixed to be a parallax image */
+.parallax {
+	grid-column: 1/7;
+	grid-row: 5;
+	background-image: url(../img/nameofperson.png);
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* footer */
+footer{
+	grid-column: 1/7;
+    grid-row: 6;
+	text-align: center;
+	padding: 125px;
+	color: #fff;
+    font-size: 8pt;
+    background-color: #252423;
+}
+footer a{
+	color: #8805f8;
+}
+
+/* use the hr class to setup a horizontal rule */
+hr {
+	border: ;
+}
+
+/* Interior type styles */
+.content_header {
+	color: #e94b26;
+	text-transform: uppercase;
+}
+.lessontitle {
+	font-size: ;
+	color: ;
+	font-family: "playfair", monospace;
+}
+
+/* interior page styles */
+.interior_header {
+    grid-column: 1/7;
+	grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(6, [col]1fr);
+	padding: 0;
+	margin-bottom: 0;
+} 
+.interior_title {
+    background-color: #8805f8;
+	grid-column: 1/4;
+	grid-row: 1;
+	font-size: 28pt;
+	font-weight: 600;
+	color: #FFFFFF;
+	padding: 35px 0 35px 35px;
+}
+.interior_menu {
+	grid-row: 1;
+	grid-column: 4/7;
+	margin: 0;
+    padding: 0;
+    background-color: #8805f8;
+    
+}
+.interior_menu ul {
+	list-style-type: none;
+	margin: 25px 35px 25px 0;
+    padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.interior_menu li {
+	text-align: center;
+	margin-right: 20px;
+    padding: 25px 0 25px 0;
+    font-weight: 600;
+}
+.interior_menu li a {
+	color: #FFFFFF;
+	text-align: center;
+	padding: 0;
+	font-size: 14pt;
+	font-weight: 600;
+	text-transform: uppercase;
+    text-decoration: none;
+}
+.interior_menu li:hover {
+    background-color: aqua;
+    border-radius: 50px;
+}
+
+/* this class will allow you to change the color of the hover text */
+.interior_menu li:hover a {
+    color: #8805f8;
+}
+.interior_menu .active {
+    font-weight: 600;
+	color: #8805f8;
+    background-color: aqua;
+    border-radius: 50px;
+}
+
+/* this class will allow you to change the color of the active text */
+.interior_menu .active a {
+    color: #8805f8;
+    text-decoration: none;
+}
+.interior_content {
+    grid-column: 1/7;
+    grid-row: 2;
+    padding: 100px;
+}
+
+/* Week 09 form button for lesson pages */
+button {
+    background-color: ;
+	color: ;
+	padding: ;
+	border: ;
+	font-size: ;		
+}

@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+canvas{
+	border: 1px solid black;
+}
+	</style>
+
+</head>
+<body>
+	<canvas id='myCanvas'></canvas>
+	<script type="text/javascript">
+	window.onload=function (){
+		
+
+		canvas.width=1920;
+		canvas.height=800;
+
+
+
+		var m=draw(200,200,10,4,-150,5);
+		if(m>=1000){
+			clearInterval(timer);
+		}
+	}
+
+	var canvas=document.getElementById('myCanvas');
+	var ctx=canvas.getContext('2d');
+
+	function draw(x,y,r,vx,vy,g){
+		var timer=setInterval(function(){
+			//ctx.clearRect(0,0,1920,800)
+			//var ctx=canvas.getContext('2d');
+			x=x+vx;
+			y=y+vy;
+			vy=vy+g;
+			if(y>=800){
+				y=790;
+				vy=-vy*0.7;
+			}
+			ctx.fillStyle='blue'
+			ctx.beginPath()
+			ctx.arc(x,y,r,0,2*Math.PI,true)
+			
+			ctx.closePath()
+			ctx.fill()
+			if(x>=1000){
+			clearInterval(timer);
+		}
+		}
+	,50)
+		return y;
+		//console.log(y)
+		if(x>=1000){
+			clearInterval(timer);
+		}
+	}
+	</script>
+</body>
+
+</html>
