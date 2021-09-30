@@ -1,8 +1,0 @@
-[06-Jul-2021 18:26:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_basename() in /home/dn66fy2kfd3o/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php:21
-Stack trace:
-#0 {main}
-  thrown in /home/dn66fy2kfd3o/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 21
-[07-Sep-2021 15:52:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function plugin_basename() in /home/dn66fy2kfd3o/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php:21
-Stack trace:
-#0 {main}
-  thrown in /home/dn66fy2kfd3o/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 21
