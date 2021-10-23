@@ -6,9 +6,9 @@ A Homepage using github
 It is a trail repo.
 Don't try to find me here
 
-[my website it here](zhujunting.com)
+[my website it here](http://www.zhujunting.com/)
 
-[or here](zhujunting.wordpress.com) in case I forgot the renew the domain
+[or here](https://zhujunting.wordpress.com/) in case I forgot the renew the domain
 
 Awwwwwwwwwwwwwwwwwwwwwwwwwwwwww:::::::::::::::
 
