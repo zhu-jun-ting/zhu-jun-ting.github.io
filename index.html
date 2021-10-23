@@ -9,13 +9,37 @@
 </head>
 
 <body>
-    <p>Rhis is some text</p>
-    <p>This is another text</p>
+    <p>This is some text</p>
+    <p>This is a vegalite graph embedded with javascript</p>
     <div id="myviz"></div>
+    <p style="color:cornflowerblue;">congressional full name and its square footage</p>
 </body>
 
 <script>
-    const mydata
+    const mydata = 
+    {
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "description": "congressional full name and its square footage",
+        "data": {
+        "url": "https://raw.githubusercontent.com/zhu-jun-ting/IS-445/main/building_inventory.csv"
+        },
+        "mark": "bar",
+        "encoding": {
+        "x": {
+            "field": "Congressional Full Name", 
+            "type": "nominal", 
+            "axis": {
+                "labelAngle": 60
+                }
+                },
+        "y": {
+            "field": "Square Footage", 
+            "aggregate": "sum",
+            "type": "quantitative"
+            }
+        }
+    }
+    
     vegaEmbed('#myviz', mydata)
 </script>
 
